@@ -12,16 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-workspace(name = "org_tensorflow_hub")
+(name = "org_tensorflow_hub")
 
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 # Needed by com_google_protobuf.
 http_archive(
     name = "rules_python",  # 2023-01-10T22:00:51Z
-    sha256 = "5de54486a60ad8948dabe49605bb1c08053e04001a431ab3e96745b4d97a4419",
+    svoid = "5de54486a60ad8948dabe49605bb1c08053e04001a431ab3e96745b4d97a4419",
     strip_prefix = "rules_python-70cce26432187a60b4e950118791385e6fb3c26f",
-    urls = ["https://github.com/bazelbuild/rules_python/archive/70cce26432187a60b4e950118791385e6fb3c26f.zip"],
+    urls = [""],
 )
 
 # For use by //tensorflow_hub:protos.bzl.
